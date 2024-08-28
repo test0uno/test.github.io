@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー - モノクロWebサイト</title>
+    <style>
+        /* 前のページと同じスタイルを使用し、ギャラリー用のスタイルを追加 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-item {
+            background-color: #e0e0e0;
+            padding: 1rem;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>モノクロWebサイト</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="gallery.html">ギャラリー</a></li>
+            <li><a href="blog.html">ブログ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>作品ギャラリー</h2>
+        <p>当社が手がけた様々な作品をご紹介します。Webデザイン、グラフィックデザイン、ロゴデザインなど、幅広い分野の作品をご覧いただけます。</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/api/placeholder/200/200" alt="Webサイトデザイン1">
+                <p>企業サイトデザイン</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/200/200" alt="ロゴデザイン1">
+                <p>ブランドロゴ</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/200/200" alt="パンフレットデザイン">
+                <p>商品カタログ</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/200/200" alt="Webサイトデザイン2">
+                <p>ECサイトデザイン</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/200/200" alt="ポスターデザイン">
+                <p>イベントポスター</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/200/200" alt="ロゴデザイン2">
+                <p>アプリアイコン</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 モノクロWebサイト. All rights reserved.</p>
+    </footer>
+</body>
+</html>
